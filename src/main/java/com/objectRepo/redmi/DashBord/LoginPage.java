@@ -13,6 +13,16 @@ public class LoginPage {
 	@FindBy (id="submitButton")
 	private WebElement LoginButton;
 	
+	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
+	private WebElement LogoutButton;
+	
+	/**
+	 * @return the logoutButton
+	 */
+	public WebElement getLogoutButton() {
+		return LogoutButton;
+	}
+
 	public WebElement getUserNameEideTextBox() {
 		return UserNameEideTextBox;
 	}

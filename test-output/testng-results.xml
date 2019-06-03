@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="62147" started-at="2019-06-03T04:05:44Z" finished-at="2019-06-03T04:06:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="62147" started-at="2019-06-03T04:05:44Z" finished-at="2019-06-03T04:06:46Z">
+      <class name="Prac">
+        <test-method status="PASS" signature="globalBrowserStart()[pri:0, instance:Prac@42e26948]" name="globalBrowserStart" is-config="true" duration-ms="41750" started-at="2019-06-03T04:05:44Z" finished-at="2019-06-03T04:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalBrowserStart -->
+        <test-method status="PASS" signature="prefix()[pri:0, instance:Prac@42e26948]" name="prefix" is-config="true" duration-ms="6223" started-at="2019-06-03T04:06:25Z" finished-at="2019-06-03T04:06:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prefix -->
+        <test-method status="PASS" signature="loginmethods()[pri:0, instance:Prac@42e26948]" name="loginmethods" duration-ms="31" started-at="2019-06-03T04:06:32Z" finished-at="2019-06-03T04:06:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginmethods -->
+        <test-method status="PASS" signature="postFix()[pri:0, instance:Prac@42e26948]" name="postFix" is-config="true" duration-ms="8591" started-at="2019-06-03T04:06:32Z" finished-at="2019-06-03T04:06:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postFix -->
+        <test-method status="PASS" signature="globalBrowserClose()[pri:0, instance:Prac@42e26948]" name="globalBrowserClose" is-config="true" duration-ms="5476" started-at="2019-06-03T04:06:40Z" finished-at="2019-06-03T04:06:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- globalBrowserClose -->
+      </class> <!-- Prac -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

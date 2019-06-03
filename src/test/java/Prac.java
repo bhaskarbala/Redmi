@@ -1,13 +1,11 @@
+import org.testng.annotations.Test;
 
+import com.util.Lib.redmi.Setup;
 
-public class Prac {
-
-	public static void main(String[] args) throws Throwable {
-		// TODO Auto-generated method stub
-		
-		
-		
-
+public class Prac extends Setup {
+@Test
+	public static void loginmethods() {
+		System.out.println("TestCAsePAssed");
 	}
 
 }
