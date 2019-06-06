@@ -7,7 +7,7 @@ public class Prac extends Setup {
 @Test
 	public static void loginmethods() {
 		System.out.println("TestCAsePAssed");
-		System.out.println(20/0);
+	
 		
 	}
 
