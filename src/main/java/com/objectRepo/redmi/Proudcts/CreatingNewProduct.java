@@ -49,7 +49,7 @@ public class CreatingNewProduct {
 	public WebElement getProductsheetEditbox() {
 		return productsheetEditbox;
 	}
-	@FindBy(name="website")
+	@FindBy(xpath="//input[@name='website']")
 	 private WebElement webSiteEditbox;
 	 
 	 @FindBy(id="mfr_part_no")
@@ -126,7 +126,7 @@ public class CreatingNewProduct {
 	@FindBy(id="jscal_field_sales_start_date")
 	private WebElement saleStartDateEditbox;
 	
-	@FindBy(id="jscal_trigger_start_date")
+	@FindBy(xpath="//input[@id='jscal_field_start_date']")
 	private WebElement supportStartDate;
 	
 	@FindBy(id="jscal_trigger_sales_end_date")
@@ -230,7 +230,7 @@ public class CreatingNewProduct {
 		String todate=dateOfYear+"-"+dateOfMonth+"-"+dateOfdays;
 		return todate;
 	}
-	public static String ExpiryDate(String dateofMonth,String dayofDate) {
+	public static String EndDate(String dateofMonth,String dayofDate) {
 		date=new Date();
 		String dateOfYear=date.toString().substring(24,date.toString().length());
 		String todate=dateOfYear+"-"+dateofMonth+"-"+dayofDate;
