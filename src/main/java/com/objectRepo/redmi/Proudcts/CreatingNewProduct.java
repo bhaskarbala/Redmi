@@ -67,6 +67,92 @@ public class CreatingNewProduct {
 	@FindBy(id="jscal_field_expiry_date")
 	private WebElement supportExpiryDateEditbox;
 	
+	@FindBy(id="unit_price")
+	private WebElement unitPriceEditBox;
+	@FindBy(id="commissionrate")
+	private WebElement commissionRateEditBox;
+	@FindBy(id="tax1_check")
+	private WebElement vatCheckBox;
+	@FindBy(id="tax2_check")
+	private WebElement salesCheckBox;
+	@FindBy(id="tax3_check")
+	private WebElement serviesCheckBox;
+	@FindBy(name="usageunit")
+	private WebElement usageUnitDropdown;
+	@FindBy(id="qty_per_unit")
+	private WebElement qtyEditBox;
+	@FindBy(id="qtyinstock")
+	private WebElement qtyinStock;
+	@FindBy(id="reorderlevel")
+	private WebElement RecorderLevelEditBox;
+	@FindBy(name="assigntype")
+	private WebElement handlerGroupRadioButton;
+	@FindBy(id="qtyindemand")
+	private WebElement qtyDemandEditBox;
+	@FindBy(id="my_file_element")
+	private WebElement ChooseFile;
+	@FindBy(name="description")
+	private WebElement descriptionDetials;
+	
+	
+	
+	
+	
+	
+	
+	
+	public WebElement getUnitPriceEditBox() {
+		return unitPriceEditBox;
+	}
+
+	public WebElement getCommissionRateEditBox() {
+		return commissionRateEditBox;
+	}
+
+	public WebElement getVatCheckBox() {
+		return vatCheckBox;
+	}
+
+	public WebElement getSalesCheckBox() {
+		return salesCheckBox;
+	}
+
+	public WebElement getServiesCheckBox() {
+		return serviesCheckBox;
+	}
+
+	public WebElement getUsageUnitDropdown() {
+		return usageUnitDropdown;
+	}
+
+	public WebElement getQtyEditBox() {
+		return qtyEditBox;
+	}
+
+	public WebElement getQtyinStock() {
+		return qtyinStock;
+	}
+
+	public WebElement getRecorderLevelEditBox() {
+		return RecorderLevelEditBox;
+	}
+
+	public WebElement getHandlerGroupRadioButton() {
+		return handlerGroupRadioButton;
+	}
+
+	public WebElement getQtyDemandEditBox() {
+		return qtyDemandEditBox;
+	}
+
+	public WebElement getChooseFile() {
+		return ChooseFile;
+	}
+
+	public WebElement getDescriptionDetials() {
+		return descriptionDetials;
+	}
+
 	/**
 	 * @return the supportStartDateEditbox
 	 */

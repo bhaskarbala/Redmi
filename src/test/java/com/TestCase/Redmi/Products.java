@@ -60,10 +60,14 @@ public class Products extends Setup {
 			String childWindow=it.next();
 			driver.switchTo().window(childWindow);
 			VendorsPageOfProducts vp=PageFactory.initElements(driver, VendorsPageOfProducts.class);
-			vp.getSelectedVendorName("Susan");
+			vp.getSelectedVendorName("Linda");
 			driver.switchTo().window(parentwindow);
-			cr.getWebSiteEditbox().sendKeys("www.google.com");
+			cr.getWebSiteEditbox().sendKeys("www.poundspowder.com");
 			cr.getVendor_part_noEditbox().sendKeys("25");
+			cr.getMfrPartNoEditbox().sendKeys(data.getDataForExcelFile("MyTestCase",23 , 2));
+			cr.getSerial_noEditbox().sendKeys(data.getDataForExcelFile("MyTestCase", 25, 2));
+			cr.getProductsheetEditbox().sendKeys(data.getDataForExcelFile("MyTestCase", 24, 2));
+			
 			
 		
 		

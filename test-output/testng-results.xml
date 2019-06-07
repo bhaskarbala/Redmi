@@ -11,20 +11,20 @@
       <![CDATA[Nagivate to CreatingNewProudct Page]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="200228" started-at="2019-06-07T09:00:54Z" finished-at="2019-06-07T09:04:14Z">
+  <suite name="Default suite" duration-ms="60014" started-at="2019-06-07T15:01:28Z" finished-at="2019-06-07T15:02:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="200228" started-at="2019-06-07T09:00:54Z" finished-at="2019-06-07T09:04:14Z">
+    <test name="Default test" duration-ms="60014" started-at="2019-06-07T15:01:28Z" finished-at="2019-06-07T15:02:28Z">
       <class name="com.TestCase.Redmi.Products">
-        <test-method status="PASS" signature="globalBrowserStart()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="globalBrowserStart" is-config="true" duration-ms="27467" started-at="2019-06-07T09:00:54Z" finished-at="2019-06-07T09:01:21Z">
+        <test-method status="PASS" signature="globalBrowserStart()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="globalBrowserStart" is-config="true" duration-ms="21080" started-at="2019-06-07T15:01:28Z" finished-at="2019-06-07T15:01:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalBrowserStart -->
-        <test-method status="PASS" signature="prefix()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="prefix" is-config="true" duration-ms="36815" started-at="2019-06-07T09:01:21Z" finished-at="2019-06-07T09:01:58Z">
+        <test-method status="PASS" signature="prefix()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="prefix" is-config="true" duration-ms="10429" started-at="2019-06-07T15:01:49Z" finished-at="2019-06-07T15:01:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prefix -->
-        <test-method status="PASS" signature="newProductPage002()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="newProductPage002" duration-ms="117179" started-at="2019-06-07T09:01:58Z" finished-at="2019-06-07T09:03:55Z">
+        <test-method status="PASS" signature="newProductPage002()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="newProductPage002" duration-ms="22361" started-at="2019-06-07T15:01:59Z" finished-at="2019-06-07T15:02:21Z">
           <reporter-output>
             <line>
               <![CDATA[Navigate to Proudct modulder]]>
@@ -37,11 +37,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- newProductPage002 -->
-        <test-method status="PASS" signature="postFix()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="postFix" is-config="true" duration-ms="16572" started-at="2019-06-07T09:03:55Z" finished-at="2019-06-07T09:04:12Z">
+        <test-method status="PASS" signature="postFix()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="postFix" is-config="true" duration-ms="5091" started-at="2019-06-07T15:02:21Z" finished-at="2019-06-07T15:02:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postFix -->
-        <test-method status="PASS" signature="globalBrowserClose()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="globalBrowserClose" is-config="true" duration-ms="1967" started-at="2019-06-07T09:04:12Z" finished-at="2019-06-07T09:04:14Z">
+        <test-method status="PASS" signature="globalBrowserClose()[pri:0, instance:com.TestCase.Redmi.Products@548e7350]" name="globalBrowserClose" is-config="true" duration-ms="953" started-at="2019-06-07T15:02:27Z" finished-at="2019-06-07T15:02:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalBrowserClose -->
