@@ -1,9 +1,14 @@
 package com.TestCase.Redmi;
 
+import static org.testng.Assert.assertEqualsNoOrder;
+
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebElement;
@@ -42,7 +47,7 @@ public class Products extends Setup {
 			pw.getCreatePageProductsSymbol().click();
 			Reporter.log("Nagivate to CreatingNewProudct Page");
 			CreatingNewProduct cr=PageFactory.initElements(driver, CreatingNewProduct.class);
-			cr.getProductNameEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",11,2));
+		/*	cr.getProductNameEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",11,2));
 			Assert.assertTrue(cr.getProductActiveButton().isSelected());
 			cr.getPartNumberEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",13, 2));
 			cr.getSaleStartDateEditbox().sendKeys(cr.todate());
@@ -53,20 +58,42 @@ public class Products extends Setup {
 			cr.getSupportStartDate().sendKeys(cr.todate());
 			cr.getSalesEndDateEditbox().sendKeys(cr.EndDate("12", "31"));
 			cr.getSupportExpiryDateEditbox().sendKeys(cr.EndDate("12", "31"));
-			
 			cr.getVenderNameEditboxSymbol().click();
-			Iterator <String >it=driver.getWindowHandles().iterator();
-			String parentwindow=it.next();
-			String childWindow=it.next();
-			driver.switchTo().window(childWindow);
+			Iterator <String>it=driver.getWindowHandles().iterator();
+			String originalWindow=it.next();
+			String newWindow;
+		    while(it.hasNext()) {
+			newWindow=it.next();
+			if(!originalWindow.equals(newWindow)) {
+				driver.switchTo().window(newWindow);
 			VendorsPageOfProducts vp=PageFactory.initElements(driver, VendorsPageOfProducts.class);
 			vp.getSelectedVendorName("Linda");
-			driver.switchTo().window(parentwindow);
+			}
+		}
+		driver.switchTo().window(originalWindow);
 			cr.getWebSiteEditbox().sendKeys("www.poundspowder.com");
 			cr.getVendor_part_noEditbox().sendKeys("25");
 			cr.getMfrPartNoEditbox().sendKeys(data.getDataForExcelFile("MyTestCase",23 , 2));
 			cr.getSerial_noEditbox().sendKeys(data.getDataForExcelFile("MyTestCase", 25, 2));
 			cr.getProductsheetEditbox().sendKeys(data.getDataForExcelFile("MyTestCase", 24, 2));
+			cr.getUnitPriceEditBox().sendKeys("10000");
+			cr.getCommissionRateEditBox().sendKeys("10");
+			cr.getVatCheckBox().click();
+			cr.getServiesCheckBox().click();
+			cr.getSalesCheckBox().click();
+			Select sc=new Select(cr.getUsageUnitDropdown());
+			sc.selectByIndex(2);
+			cr.getQtyEditBox().sendKeys("12");
+			cr.getQtyinStock().sendKeys("1000");
+			cr.getRecorderLevelEditBox().sendKeys("FirstLevel");
+			cr.getHandlerGroupRadioButton().click();
+			*/cr.getQtyDemandEditBox().sendKeys("500");
+			JavascriptExecutor jdriver=(JavascriptExecutor)driver;
+			jdriver.executeScript("window.scrollBy(0,500) ");
+			cr.getChooseFile().click();
+			Runtime.getRuntime().exec("‪‪\\Users\\NBhaskar\\eclipse-workspace\\New folder\\Redmi\\Autoit\\hemedri.exe");
+			
+			
 			
 			
 		

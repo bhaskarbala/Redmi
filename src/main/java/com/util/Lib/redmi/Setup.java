@@ -53,7 +53,7 @@ public class Setup {
 	}
 	@AfterClass
 	public void globalBrowserClose() {
-		driver.quit();
+		driver.close();
 	}
 	
 }

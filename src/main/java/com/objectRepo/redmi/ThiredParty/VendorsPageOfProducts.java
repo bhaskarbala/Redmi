@@ -40,8 +40,9 @@ public void getSelectedVendorName(String ExceptedResult) {
 		String acutal=list.get(i).getText();
 		if(acutal.equals(ExceptedResult)) {
 			list.get(i).click();
+			break;	
 		}
-		
+	
 	}
 	
 }
