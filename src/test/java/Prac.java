@@ -19,7 +19,8 @@ public class Prac extends Setup {
 	pw.getCreatePageProductsSymbol().click();
 	Reporter.log("Nagivate to CreatingNewProudct Page");
 	CreatingNewProduct cr=PageFactory.initElements(driver, CreatingNewProduct.class);
-	cr.getChooseFile().clear();
+	cr.getChooseFile().click();
+	
 	
 	
 		
