@@ -47,7 +47,7 @@ public class Products extends Setup {
 			pw.getCreatePageProductsSymbol().click();
 			Reporter.log("Nagivate to CreatingNewProudct Page");
 			CreatingNewProduct cr=PageFactory.initElements(driver, CreatingNewProduct.class);
-		/*	cr.getProductNameEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",11,2));
+		cr.getProductNameEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",11,2));
 			Assert.assertTrue(cr.getProductActiveButton().isSelected());
 			cr.getPartNumberEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",13, 2));
 			cr.getSaleStartDateEditbox().sendKeys(cr.todate());
@@ -87,11 +87,11 @@ public class Products extends Setup {
 			cr.getQtyinStock().sendKeys("1000");
 			cr.getRecorderLevelEditBox().sendKeys("FirstLevel");
 			cr.getHandlerGroupRadioButton().click();
-			*/cr.getQtyDemandEditBox().sendKeys("500");
+			cr.getQtyDemandEditBox().sendKeys("500");
 			JavascriptExecutor jdriver=(JavascriptExecutor)driver;
 			jdriver.executeScript("window.scrollBy(0,500) ");
-			cr.getChooseFile().click();
-			Runtime.getRuntime().exec("‪‪\\Users\\NBhaskar\\eclipse-workspace\\New folder\\Redmi\\Autoit\\hemedri.exe");
+			//cr.getChooseFile().click();
+			//Runtime.getRuntime().exec("‪‪\\Users\\NBhaskar\\eclipse-workspace\\New folder\\Redmi\\Autoit\\hemedri.exe");
 			
 			
 			

@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Prac">
+      <class name="Remote">
         <methods>
-          <include name="prefix"/>
-          <include name="loginmethods"/>
-          <include name="globalBrowserClose"/>
-          <include name="globalBrowserStart"/>
-          <include name="postFix"/>
+          <include name="TestDR"/>
         </methods>
-      </class> <!-- Prac -->
+      </class> <!-- Remote -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

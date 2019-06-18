@@ -51,17 +51,23 @@ public class DataHandler {
 	    wb.close();
 		
 	}
-	public Object[][] getDataSameTestCase(String sheetname) throws Throwable {
-		
+
+	public static Object[][] getRunSameTestCase(String sheetname) throws Exception {
+		// TODO Auto-generated method stub
+		//String filepath="C:\\Users\\NBhaskar\\eclipse-workspace\\New folder\\Redmi\\TestData\\ZohoCrmTestCase.xlsx";
+		String pathDataZoho="./TestData/ZohoCrmTestCase.xlsx";
 		FileInputStream fis=new FileInputStream(pathDataZoho);
-		Workbook wb=WorkbookFactory.create(fis);
-		Sheet st=wb.getSheet(sheetname);
-		Object obj[][]=new Object[st.getLastRowNum()][st.getRow(0).getLastCellNum()];
-		for(int i=0;i<=st.getLastRowNum();i++) {
-			for(int k=0; k<=st.getRow(i).getLastCellNum();k++) {
-				obj[i][k]=st.getRow(i+1).getCell(k).toString();
+		Workbook book=WorkbookFactory.create(fis);
+		Sheet sheet=book.getSheet(sheetname);
+		Object [][] datatype=new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		for(int i=0;i<sheet.getLastRowNum();i++) {
+			for(int k=0; k<sheet.getRow(0).getLastCellNum();k++) {
+				datatype[i][k]=sheet.getRow(i+1).getCell(k).toString();
+				
 			}
-		}
-		return obj;
+			
+			}
+		return datatype;
+
 	}
 }
