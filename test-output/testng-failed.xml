@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCase.Redmi.Products">
+      <class name="Prac">
         <methods>
           <include name="prefix"/>
-          <include name="newProductPage002"/>
+          <include name="loginmethods"/>
           <include name="globalBrowserClose"/>
           <include name="globalBrowserStart"/>
           <include name="postFix"/>
         </methods>
-      </class> <!-- com.TestCase.Redmi.Products -->
+      </class> <!-- Prac -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
