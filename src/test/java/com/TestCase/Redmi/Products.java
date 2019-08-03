@@ -2,8 +2,11 @@ package com.TestCase.Redmi;
 
 import static org.testng.Assert.assertEqualsNoOrder;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -27,8 +30,8 @@ import com.util.Lib.redmi.Setup;
 import junit.framework.Assert;
 @Listeners(com.util.Lib.redmi.ListernerImp.class)
 public class Products extends Setup {
-	@Test (groups= {"SomeTest"},enabled=false)
-	public void navigateToProduct001() {
+	@Test (groups= {"SomekTest"})
+	public void navigateToProduct001Test() {
 		Reporter.log("Navigate to Proudct moduler");
 		Homepage hp=PageFactory.initElements(driver, Homepage.class);
 		hp.getProductsLink().click();
@@ -37,8 +40,8 @@ public class Products extends Setup {
 		String actual=driver.getTitle();
 		Assert.assertEquals(expTitlepage, actual);
 	}
-		@Test
-		public void newProductPage002() throws Throwable {
+		@Test(groups= {"Regression"})
+		public void newProductPage002Test() throws Throwable {
 			Reporter.log("Navigate to Proudct modulder");
 			Homepage hp=PageFactory.initElements(driver, Homepage.class);
 			hp.getProductsLink().click();
@@ -47,7 +50,7 @@ public class Products extends Setup {
 			pw.getCreatePageProductsSymbol().click();
 			Reporter.log("Nagivate to CreatingNewProudct Page");
 			CreatingNewProduct cr=PageFactory.initElements(driver, CreatingNewProduct.class);
-		cr.getProductNameEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",11,2));
+		    cr.getProductNameEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",11,2));
 			Assert.assertTrue(cr.getProductActiveButton().isSelected());
 			cr.getPartNumberEditBox().sendKeys(data.getDataForExcelFile("MyTestCase",13, 2));
 			cr.getSaleStartDateEditbox().sendKeys(cr.todate());
@@ -92,20 +95,48 @@ public class Products extends Setup {
 			jdriver.executeScript("window.scrollBy(0,500) ");
 			//cr.getChooseFile().click();
 			//Runtime.getRuntime().exec("‪‪\\Users\\NBhaskar\\eclipse-workspace\\New folder\\Redmi\\Autoit\\hemedri.exe");
-			
-			
-			
-			
-		
-		
 		}
 		
+		@Test(groups= {"SomkeTest","Regression"})
+		public void getInterviewQucationTest() throws InterruptedException {
+			Reporter.log("Navigate to Proudct modulder");
+			Homepage hp=PageFactory.initElements(driver, Homepage.class);
+			hp.getProductsLink().click();
+			Reporter.log("Navigate to New products Symoble ");
+			ProductsWebElements pw=PageFactory.initElements(driver, ProductsWebElements.class);
+			pw.getCreatePageProductsSymbol().click();
+			Reporter.log("Nagivate to CreatingNewProudct Page");
+			JavascriptExecutor jdriver=(JavascriptExecutor)driver;
+			jdriver.executeScript("window.scrollBy(0,500)");
+			
+			CreatingNewProduct cr=PageFactory.initElements(driver, CreatingNewProduct.class);
+			Reporter.log("Navigate to DropDown menu");
+			Select sct=new Select(cr.getUsageUnitDropdown());
+			Reporter.log("Select the value ");
+			sct.selectByVisibleText("M");
+			List<WebElement>list=sct.getOptions();
+			Reporter.log("To storing into arraylist");
+			ArrayList<String> al=new ArrayList<String>();
+			for(int i=0;i<=list.size()-1;i++) {
+				String data=list.get(i).getText();
+				 al.add(data);
+			}
+			Reporter.log("Sort and alphabetchic order");
+		    Collections.sort(al);
+		    for(int i=0;i<=al.size()-1;i++) {
+			System.out.println(al.get(i));
+			}
+		
+			
+	
+	
+			
 		
 		
 		
 		 
 	
-	
+		}
 	
 	
 	

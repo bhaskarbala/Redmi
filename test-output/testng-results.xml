@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52920" started-at="2019-06-18T16:24:04Z" finished-at="2019-06-18T16:24:57Z">
+  <suite name="Default suite" duration-ms="59436" started-at="2019-06-25T16:41:08Z" finished-at="2019-06-25T16:42:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52920" started-at="2019-06-18T16:24:04Z" finished-at="2019-06-18T16:24:57Z">
+    <test name="Default test" duration-ms="59436" started-at="2019-06-25T16:41:08Z" finished-at="2019-06-25T16:42:08Z">
       <class name="Remote">
-        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="13549" started-at="2019-06-18T16:24:06Z" data-provider="getLoginErrorMsg" finished-at="2019-06-18T16:24:20Z">
+        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="22282" started-at="2019-06-25T16:41:11Z" data-provider="getLoginErrorMsg" finished-at="2019-06-25T16:41:34Z">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDR -->
-        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="12594" started-at="2019-06-18T16:24:20Z" data-provider="getLoginErrorMsg" finished-at="2019-06-18T16:24:33Z">
+        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="11011" started-at="2019-06-25T16:41:34Z" data-provider="getLoginErrorMsg" finished-at="2019-06-25T16:41:45Z">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDR -->
-        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="13454" started-at="2019-06-18T16:24:33Z" data-provider="getLoginErrorMsg" finished-at="2019-06-18T16:24:46Z">
+        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="11098" started-at="2019-06-25T16:41:45Z" data-provider="getLoginErrorMsg" finished-at="2019-06-25T16:41:56Z">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDR -->
-        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="10906" started-at="2019-06-18T16:24:46Z" data-provider="getLoginErrorMsg" finished-at="2019-06-18T16:24:57Z">
+        <test-method status="PASS" signature="TestDR(java.lang.String, java.lang.String)[pri:0, instance:Remote@1bce4f0a]" name="TestDR" duration-ms="11888" started-at="2019-06-25T16:41:56Z" data-provider="getLoginErrorMsg" finished-at="2019-06-25T16:42:08Z">
           <params>
             <param index="0">
               <value>
